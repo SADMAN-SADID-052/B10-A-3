@@ -60,33 +60,6 @@
           <div class="navbar bg-base-100">
             <div class="navbar-start">
 
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  
-                    <li class="font-semibold"><a>Home</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact Us</a></li>
-                    
-                </ul>
-              </div>
               
               <a class="btn btn-ghost text-2xl font-semibold"> <i class="fa-solid fa-square-arrow-up-right text-[#ABEF5F]"></i>Rinterio</a>
             </div>
@@ -97,16 +70,49 @@
                 <li><a>Portfolio</a></li>
                 <li><a>Blogs</a></li>
                 <li><a>Contact Us</a></li>
-                <li><i class="fa-solid fa-cart-shopping "></i></li>
-                <li> <i class="fa-solid fa-magnifying-glass"></i></li>
+            
              
                 </ul>
             </div>
 
            
-            <div class="navbar-end ">
+            <div class="navbar-end md:flex gap-3 hidden">
+
+              <i class="fa-solid fa-cart-shopping text-2xl p-3 border-2 cursor-pointer bg-white rounded-full"></i>
+              <i class="fa-solid fa-magnifying-glass text-2xl p-3 border-2 bg-white rounded-full cursor-pointer"></i>
               <a class="btn bg-[#ABEF5F] px-6 text-black">Book Consult <i class="fa-solid fa-circle-arrow-up"></i></a>
             </div>
+
+            <!-- For responsive -->
+
+            <div class="dropdown ml-14">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 absolute right-0 text-left">
+                
+                  <li class="font-semibold"><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                  
+              </ul>
+            </div>
+            
 
             
           </div>
@@ -150,7 +156,7 @@
 
          <div class="max-w-6xl mx-auto">
 
-          <div class="grid grid-cols-1 items-center lg:grid-cols-2 gap-16">
+          <div class="grid grid-cols-1 items-center lg:grid-cols-2 gap-12">
 
             
             <div class="ml-10">
@@ -290,7 +296,124 @@
 
 </section>
 
-<!--  -->
+
+<!-- Our Latest Portfolio -->
+
+<section class="mt-10 md:container mx-auto">
+  
+
+  <!-- Text part -->
+  <div class="text-center">
+
+    <h5 class="bg-[#ABEF5F33] p-3 font-semibold w-56 rounded-full mx-auto mb-4"><i class="fa-solid fa-arrow-right text-sm"></i><span class="ml-2">Explore our Latest work</span></h5>
+    
+      <h3 class="text-4xl font-extrabold leading-snug">
+        Our Latest Portfolio
+     
+     </h3>
+      <p class="text-sm text-[#494949] mt-4 mb-4">
+        The barn house captivates with its blend of rustic charm and modern sophistication, <br>
+         featuring weathered wood, sleek metal accents.
+      </p>
+
+      
+  </div>
+
+  <!-- Card -1-->
+  
+
+    <div class="flex flex-1 gap-3 flex-col lg:flex-row">
+
+      <div class="bg-slate-100 p-3 rounded-3xl flex flex-col lg:flex-row items-center mx-auto lg:mx-0  gap-4">
+  
+        <div><img class="w-[250px]" src="./assets/img1.png" alt=""></div>
+        <div class="space-y-2 w-[250px] lg:w-auto">
+          <h1 class="text-sm font-bold">Commercial</h1>
+          <p class="text-xs text-gray-500">The barn house captivates with its blend of rustic charm <br>
+             and modern. The barn house captivates with its blend of <br>
+              rustic charm and modern .</p>
+  
+              <p class="text-sm font-bold">View Details <i class="fa-solid  fa-square-arrow-up-right text-[#cf0a527a] text-sm cursor-pointer"></i> </p>
+        </div>
+  
+      </div>
+      <div class="bg-slate-100  p-3 rounded-3xl mx-auto w-[280px] lg:w-auto lg:mx-0">
+  
+        <img class="w-[300px] h-[170px]" src="assets/img2.png" alt="">
+  
+      </div>
+     </div>
+   
+
+   <!-- Card-2 -->
+
+   <div class="mt-4 mb-10">
+
+    <div class="flex flex-1 gap-3 flex-col lg:flex-row">
+
+      <div class="bg-slate-100 p-3 rounded-3xl mx-auto lg:mx-0 w-[280px] lg:w-auto">
+  
+        <img class="w-[280px] lg:w-[170px] h-[170px]" src="assets/img3.png" alt="">
+  
+      </div>
+  
+      <div class="bg-slate-100 p-3 rounded-3xl flex flex-col  lg:flex-row  lg:items-center gap-4 items-center mx-auto lg:mx-0">
+  
+        <div><img class="w-[260px] lg:w-[180px] h-[170px]" src="./assets/img4.png" alt=""></div>
+        <div class="space-y-2 w-[250px] lg:w-auto">
+          <h1 class="text-sm font-bold">Commercial</h1>
+          <p class="text-xs text-gray-500">The barn house captivates with its blend of rustic charm <br>
+             and modern. The barn house captivates with its blend of <br>
+              rustic charm and modern .</p>
+  
+              <p class="text-sm font-bold">View Details <i class="fa-solid  fa-square-arrow-up-right text-[#cf0a527a] text-sm cursor-pointer"></i> </p>
+        </div>
+  
+      </div>
+    
+
+      <div class="bg-slate-100 p-3 rounded-3xl mx-auto lg:mx-0 w-[280px] lg:w-auto">
+  
+        <img class="w-[280px] lg:w-[170px] h-[170px]" src="assets/img5.png" alt="">
+  
+      </div>
+
+
+     </div>
+   </div>
+  
+</section>
+
+<!--  Form section-->
+
+<section class="bg-[url('/assets/bg.jpg')] bg-no-repeat bg-center p-4 bg-cover">
+  <div class=" p-8 max-w-4xl mx-auto rounded-md">
+    <h2 class="text-4xl font-bold text-center mb-4">Let's Discuss Next Project</h2>
+    <p class="text-gray-600 text-center mb-8">
+        The barn house captivates with its blend of rustic charm and modern sophistication, 
+        featuring weathered wood, sleek metal accents.
+    </p>
+
+    <!-- Form part -->
+    <form action="#" method="POST" class="space-y-4">
+        <div class="flex flex-col gap-4  lg:flex-row ">
+          
+            <input type="text" name="first_name" placeholder="First Name*" class="lg:w-3/4 p-3 border rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400">
+            <input type="text" name="last_name" placeholder="Last Name*" class="lg:w-3/4 p-3 border rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400">
+        </div>
+
+        <div class="flex flex-col gap-4  lg:flex-row">
+            <input type="tel" name="phone_number" placeholder="Phone Number*" class="lg:w-3/4 p-3 border rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400">
+            <input type="email" name="email" placeholder="Email Number*" class="lg:w-3/4 p-3 border rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400" >
+        </div>
+
+        <textarea name="message" placeholder="Write your message here" class="w-full p-3 border rounded-3xl focus:outline-none focus:ring-2 focus:ring-gray-400" rows="4"></textarea>
+        <button type="submit" class="w-full  bg-[#ABEF5F] font-bold py-3 rounded-full hover:bg-green-200 transition-colors"> Send Mail 
+          <i class="fa-solid fa-square-arrow-up-right text-black text-xl"></i></button>
+    </form>
+</div>
+
+</section>
 
   
 
