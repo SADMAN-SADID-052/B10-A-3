@@ -25,21 +25,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- java Script custom color -->
-
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-     
-    <!-- font family -->
+<!-- font family & background image -->
     <style>
 
         .font_1
@@ -47,6 +33,14 @@
 
           font-family: "Manrope", sans-serif;
          
+        }
+
+        .form-bg
+        {
+          background-image: url('./assets/bg.jpg');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
         }
     </style>
 
@@ -125,7 +119,7 @@
 
     <main>
 
-        <!-- Bannar section -->
+        <!-- Banner section -->
 
         <section>
           <div class="card bg-base-100">
@@ -136,25 +130,25 @@
                 class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h1 class="text-5xl font-bold">A barn house of this design has a <br>
+              <h1 class="text-4xl lg:text-5xl font-extrabold lg:leading-snug">A barn house of this design has a <br>
                 striking appearance</h1>
               <p class="text-sm mt-10 mb-10 text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>
                  accents, and large windows that flood the space with natural light.</p>
               <div class="card-actions">
-                <button class="btn btn-primary bg-[#ABEF5F] text-black ">View Details <i class="fa-solid fa-square-arrow-up-right text-blue-500 text-2xl"></i></button>
+                <button class="btn btn-ghost bg-[#ABEF5F] text-black ">View Details <i class="fa-solid fa-square-arrow-up-right text-blue-500 text-2xl"></i></button>
               </div>
             </div>
           </div>
         </section>
 
 
-         <!-- We design throughtful section -->
+         <!-- About us section -->
 
         <section class="w-full mx-auto mt-20 bg-[#F4F4F4]">
 
          
 
-         <div class="max-w-6xl mx-auto">
+         <div class="lg:max-w-6xl mx-auto">
 
           <div class="grid grid-cols-1 items-center lg:grid-cols-2 gap-12">
 
@@ -165,59 +159,72 @@
                     <div class="mt-8">
 
                       
-                        <img class="mb-6" src="assets/Vector.png" alt="">
-                        <h5 class="bg-[#FFFFFF] p-3 font-semibold w-40 rounded-full  mb-4"><i class="fa-solid fa-arrow-right text-xl"></i><span class="ml-2">About Us</span></h5>
-                        <h3 class="text-4xl font-extrabold leading-snug">
-                          We design thoughtful, <br>
-                           liveable spaces
-                        </h3>
-                        <p class="text-sm text-[#494949] mt-4 mb-4">
-                            Everybody is different, which is why we <br>
-                            offer styles for every body.
-                        </p>
+                        <img class="mb-3 hidden lg:block" src="assets/Vector.png" alt="">
+                        <h5 class="bg-[#FFFFFF] p-3 font-semibold w-40 rounded-full  mb-4 mx-auto lg:mx-0"><i class="fa-solid fa-arrow-right text-xl"></i><span class="ml-2">About Us</span></h5>
+                        
+                        <div class="text-center lg:text-left">
+                          <h3 class="text-3xl lg:text-4xl font-extrabold leading-snug">
+                            We design thoughtful, <br>
+                             liveable spaces
+                          </h3>
+                          <p class="text-sm text-[#494949] mt-4 mb-4">
+                              Everybody is different, which is why we <br>
+                              offer styles for every body.
+                          </p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex items-center bg-[#FFFFFF]  rounded-2xl mt-2">
+
+               
+                <div class="mr-6 lg:mr-0">
+
+                                <!-- Commercial part -->
+
+                <div class="flex items-center bg-[#FFFFFF]  rounded-2xl mt-2 ">
                     
-                    <img class="w-14 h-14 ml-5" src="./assets/commercial.png" alt="">
+                  <img class="w-14 h-14 ml-5" src="./assets/commercial.png" alt="">
 
-                    <div class="p-5">
-                        <h3 class="font-semibold text-xl ">
-                          Commercial
-                            
-                        </h3>
-                        <p class="text-sm text-[#494949]">
-                          The barn house captivates with its blend <br>
-                            of rustic charm and modern.
-                            
-                        </p>
-
-                    </div>
-                
-                </div>
-                <div class="flex items-center  bg-[#FFFFFF]  rounded-2xl mt-4">
-                    
-                    <img class="w-14 h-14 ml-5" src="./assets/residential.png" alt="">
-
-                    <div class="p-5">
-                        <h3 class="font-semibold text-xl"> 
-                          Residential
+                  <div class="p-5">
+                      <h3 class="font-semibold text-xl ">
+                        Commercial
                           
-                        </h3>
-
-                        <p class="text-sm text-[#494949]">
-                           
-                          The barn house captivates with its blend <br>
+                      </h3>
+                      <p class="text-sm text-[#494949]">
+                        The barn house captivates with its blend <br>
                           of rustic charm and modern.
-                        </p>
-                    </div>
-                
+                          
+                      </p>
+
+                  </div>
+              
+              </div>
+
+              <!-- Residential part -->
+               
+              <div class="flex items-center  bg-[#FFFFFF]  rounded-2xl mt-4">
+                  
+                  <img class="w-14 h-14 ml-5" src="./assets/residential.png" alt="">
+
+                  <div class="p-5">
+                      <h3 class="font-semibold text-xl"> 
+                        Residential
+                        
+                      </h3>
+
+                      <p class="text-sm text-[#494949]">
+                         
+                        The barn house captivates with its blend <br>
+                        of rustic charm and modern.
+                      </p>
+                  </div>
+              
+              </div>
                 </div>
             </div>
 
            
-            <div class="lg:mt-44">
-                <img class="w-3/4 " src="./assets/Rectangle.png" alt="">
+            <div class="mx-auto lg:mt-44 ">
+                <img class="w-3/4 lg:mx-0  mx-auto" src="./assets/Rectangle.png" alt="">
             </div>
 
         </div>
@@ -299,7 +306,7 @@
 
 <!-- Our Latest Portfolio -->
 
-<section class="mt-10 md:container mx-auto">
+<section class="mt-10 max-w-5xl mx-auto">
   
 
   <!-- Text part -->
@@ -386,7 +393,7 @@
 
 <!--  Form section-->
 
-<section class="bg-[url('/assets/bg.jpg')] bg-no-repeat bg-center p-4 bg-cover">
+<section class="form-bg p-4">
   <div class=" p-8 max-w-4xl mx-auto rounded-md">
     <h2 class="text-4xl font-bold text-center mb-4">Let's Discuss Next Project</h2>
     <p class="text-gray-600 text-center mb-8">
@@ -416,7 +423,7 @@
 </section>
 
 
-<!-- Challange section: FAQ -->
+<!-- Chllange section: FAQ -->
 
 
 <section class="my-24 max-w-6xl mx-auto">
@@ -488,11 +495,9 @@
     </div>
 </section>
   
+</main>
 
-      
-
-        
-    </main>
+<!-- Footer section -->
     
     <footer class="footer footer-center bg-[#1C1C1C] text-primary-content p-10">
       <aside>
